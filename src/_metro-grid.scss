@@ -1,0 +1,92 @@
+// Grids
+// TODO: need the ability to have tiles that are 2 columns wide
+// http://bulma.io/documentation/grid/tiles/
+
+@mixin elr-grid-item() {
+  padding: 0;
+  background-color: #e2e2e2;
+  border-radius: 5px;
+  color: #333;
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    margin: 0;
+    width: 100%;
+  }
+
+  .overlay {
+    background-color: rgba(#fff, 0.5);
+    width: 100%;
+    z-index: 100;
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .caption {
+    padding: 10px;
+
+    h1 {
+      font-size: 16px;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      //   @include elr-clearfix;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 5px 5px 0;
+      padding: 2px 10px;
+      color: #fff;
+      background-color: #333;
+      border-radius: 3px;
+      list-style: none;
+      display: inline-block;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@mixin elr-flexible-grid($config: ()) {
+  $config: extend(
+    (
+      images-per-row: 4,
+    ),
+    $config
+  );
+
+  $images-per-row: map-get($config, images-per-row);
+
+  //   @include elr-clearfix;
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+  column-count: $images-per-row;
+  column-gap: 10px;
+  width: 100%;
+  transition: all;
+}

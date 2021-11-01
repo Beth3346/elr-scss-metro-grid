@@ -1,0 +1,9 @@
+@import "src/main";
+
+.grid {
+  @include elr-flexible-grid;
+}
+
+.grid-item {
+  @include elr-grid-item;
+}
