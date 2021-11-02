@@ -10,10 +10,10 @@
   "scripts": {
     "build": "gulp clean && gulp",
     "prepare": "husky install",
-    "test": "gulp clean && gulp",
-    "update": "ncu -u",
+    "test": "gulp clean && gulp && gulp clean",
+    "update": "ncu",
     "update:install": "ncu -u && npm install",
-    "publish": "np"
+    "publish": "gulp clean && np"
   },
   "devDependencies": {
     "del": "^6.0.0",
