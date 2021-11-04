@@ -1,7 +1,7 @@
 {
   "name": "elr-scss-metro-grid",
   "description": "a scss mixin for metro style grids",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Elizabeth Rogers",
   "bugs": {
     "url": "https://github.com/Beth3346/elr-scss-metro-grid",
