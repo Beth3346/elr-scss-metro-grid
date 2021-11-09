@@ -1,6 +1,5 @@
 # elr-scss-metro-grid
 
-[![Build Status](https://travis-ci.com/Beth3346/elr-scss-metro-grid.svg?branch=master)](https://travis-ci.com/Beth3346/elr-scss-metro-grid)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/dm/elr-scss-metro-grid.svg?style=flat)](https://npmjs.com/package/elr-scss-metro-grid)
 
